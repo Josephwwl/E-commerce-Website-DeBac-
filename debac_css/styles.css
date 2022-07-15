@@ -1,0 +1,376 @@
+/*General Items in the Body*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: pink;
+    font-family: "Trebuchet MS", sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    margin: 25px 75px 190px 75px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+figcaption{
+    padding-top: 3px;
+}
+
+span{
+    color: red;
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.top-space{
+    padding-top: 7%;
+}
+
+/*Header and Navigation List*/
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    background: rgb(243, 92, 117);
+    box-shadow: 0px 0px 10px gray;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+.nav-list > .nav-item:not(:first-child):hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+.drop-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.drop-item:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+.drop-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+.nav-list .drop-item a:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    padding: 10px 0 10px 0;
+    background-color: rgb(255,192,203,.7);
+    box-shadow: 0px 0px 4px gray;
+    border-radius: 3px;
+    gap: 0.8rem; 
+}
+
+.dropdown a{
+    padding: 0px 10px;
+}
+
+.dropdown a:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-list li:hover .dropdown>li{
+    display: block;
+    top: 0;
+}
+
+.dropdown li{
+    display: none;
+    position: relative;
+}
+
+.icon-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.icon-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(255, 219, 88);
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 6px gray;
+}
+
+.foot-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding-top: 24px;
+}
+
+.content ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.content li a{
+    color: black;
+    padding: 9px 30px;
+    display: block;
+    margin: 4px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.3rem;
+}
+
+.content li a:hover{
+    background-color: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    border-radius: 18px;
+    transition: 0.2s;
+}
+
+.content h2 {
+    text-decoration-color: rgb(243, 92, 117);
+}
+
+.content p {
+    padding-bottom: 8px;
+    font-size: 19px;
+}
+
+.foot-bottom{
+    text-align: center;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.foot-bottom img{
+    width: auto;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.sub-button{
+    display: block;
+    margin-top: 12px;
+    margin-left: 105px;
+    margin-right: auto;
+    width: 0%;
+}
+
+.sub-button:hover{
+    transform: scale(1.07);
+    transition: all 0.4s ease;
+}
+
+.content .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.content .btn button[type="submit"]{
+    border: 0px;
+    padding: 9px;
+    margin-top: 10px;
+    width: 35%;
+    background: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s;
+    text-align: center;
+}
+
+.content .btn button[type="submit"]:hover{
+    background: rgb(255, 243, 128);
+    color: rgb(243, 92, 117);
+    border: 1px solid gray;
+}
+
+.foot-container #error-content{
+    color: rgb(241, 93, 93);
+    padding: 0px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
+/*Main Content*/
+.container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.product{
+    background-color: white;
+    width: 240px;
+    height: 360px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.product-img{
+    border-bottom: 2px solid grey;
+    height: 231px;
+    margin-bottom: 13px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product:hover{
+    background-color: rgb(254, 127, 156);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+
+.gelAF{
+    background-image: url('../pictures/aFreeGel.jpg');
+    width: 240px;
+    height: 230px;
+}
+
+.sprayAF{
+    background-image: url('../pictures/aFreeSpray.jpg');
+    width: 240px;
+    height: 230px;
+}
+
+.gelAB{
+    background-image: url('../pictures/aGel.jpg');
+    width: 240px;
+    height: 230px;
+}
+
+.sprayAB{
+    background-image: url('../pictures/aSpray.jpg');
+    width: 240px;
+    height: 230px;
+}
+
+.bundle1{
+    background-image: url('../pictures/bundle1.png');
+    width: 240px;
+    height: 230px;
+}
+
+.bundle2{
+    background-image: url('../pictures/bundlle2.png');
+    width: 240px;
+    height: 230px;
+}
+
+.product h3 {
+    padding: 0px 8px;
+}
+
+.product p {
+    padding: 8px;
+    font-size: 22px;
+}
+
+.product a{
+    background-color: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    padding: 9px 30px;
+    display: block;
+    margin: 4px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.3rem;
+}
+
+.product a:hover{
+    background-color: rgb(255, 243, 128);
+    color: rgb(243, 92, 117);
+}

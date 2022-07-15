@@ -1,0 +1,457 @@
+/*General Items in the Body*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: pink;
+    font-family: "Trebuchet MS", sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    margin: 25px 75px 190px 75px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+figcaption{
+    padding-top: 3px;
+}
+
+span{
+    color: red;
+}
+
+.top-space{
+    padding-top: 7%;
+}
+
+/*Header and Navigation List*/
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    background: rgb(243, 92, 117);
+    box-shadow: 0px 0px 10px gray;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+.nav-list > .nav-item:not(:first-child):hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+.drop-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.drop-item:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+.drop-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+.nav-list .drop-item a:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    padding: 10px 0 10px 0;
+    background-color: rgb(255,192,203,.7);
+    box-shadow: 0px 0px 4px gray;
+    border-radius: 3px;
+    gap: 0.8rem; 
+}
+
+.dropdown a{
+    padding: 0px 10px;
+}
+
+.dropdown a:hover{
+    background-color: rgb(255, 243, 128);
+    color: #555;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-list li:hover .dropdown>li{
+    display: block;
+    top: 0;
+}
+
+.dropdown li{
+    display: none;
+    position: relative;
+}
+
+.icon-item{
+    list-style: none;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.icon-item a{
+    text-decoration: none;
+    color: black;  
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(255, 219, 88);
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 6px gray;
+}
+
+.foot-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding-top: 24px;
+}
+
+.content ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.content li a{
+    color: black;
+    padding: 9px 30px;
+    display: block;
+    margin: 4px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.3rem;
+}
+
+.content li a:hover{
+    background-color: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    border-radius: 18px;
+    transition: 0.2s;
+}
+
+.content h2 {
+    text-decoration-color: rgb(243, 92, 117);
+}
+
+.content p {
+    padding-bottom: 8px;
+    font-size: 19px;
+}
+
+.foot-bottom{
+    text-align: center;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.foot-bottom img{
+    width: auto;
+}
+
+.form-news input[type="text"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+.form-news input[type="text"]:focus {
+    border: 3px solid #555;
+}
+
+.sub-button{
+    display: block;
+    margin-top: 12px;
+    margin-left: 105px;
+    margin-right: auto;
+    width: 0%;
+}
+
+.sub-button:hover{
+    transform: scale(1.07);
+    transition: all 0.4s ease;
+}
+
+.content .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.content .btn button[type="submit"]{
+    border: 0px;
+    padding: 9px;
+    margin-top: 10px;
+    width: 35%;
+    background: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s;
+    text-align: center;
+}
+
+.content .btn button[type="submit"]:hover{
+    background: rgb(255, 243, 128);
+    color: rgb(243, 92, 117);
+    border: 1px solid gray;
+}
+
+.foot-container #error-content{
+    color: rgb(241, 93, 93);
+    padding: 0px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
+/*Main Content*/
+.contact{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+details{
+    text-align: left;
+    color: #444;
+    margin: 0 33%;
+    padding-top: 25px;
+}
+
+summary {
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    color: black;
+    background-image: linear-gradient(to top left, rgb(243, 92, 117), rgb(255, 243, 128));
+    position: relative;
+    padding: 16px;
+    padding-left: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px gray;
+}
+
+summary:before {
+    content: " ";
+    top: 20px;
+    left: 45px;
+    position: absolute;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    transform: rotate(0);
+    transform-origin: 3px 50%;
+    transition: 0.35s transform ease;
+}
+  
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+
+.payment li{
+    list-style-position: inside;  
+}
+
+.contact p{
+    font-size: 19px;
+    font-weight: 500;
+    padding: 20px 80px;
+    text-align: justify;
+}
+
+.contact ul{
+    font-size: 19px;
+    padding: 20px 80px;
+}
+
+.feedback-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.feedback-content{
+    background-color: rgb(255, 154, 170);
+    padding: 5px 35px 20px 35px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 2px rgb(255, 137, 157,1);
+}
+
+.feedback-content p {
+    padding-bottom: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.support-content{
+    background-color: rgb(255, 154, 170);
+    padding: 5px 35px 5px 50px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 2px rgb(255, 137, 157,1);
+}
+
+.support-content ul {
+    font-size: 19px;
+}
+
+
+.submit-button{
+    display: block;
+    margin-top: 12px;
+    margin-right: 150px;
+    margin-left: auto;
+    width: 0%;
+}
+
+.submit-button:hover{
+    transform: scale(1.07);
+    transition: all 0.4s ease;
+}
+
+textarea{
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+    width: 100%;
+    resize: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+textarea:focus {
+    border: 3px solid #555;
+}
+
+textarea::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.feedback-form{
+    text-align: center;
+}
+
+.feedback-form input[type="text"] {
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.feedback-form input[type="text"]:focus {
+    border: 3px solid #555;
+}
+
+.feedback-form .btn button[type="submit"]{
+    border: 0px;
+    margin-top: 20px;
+    padding: 12px;
+    width: 40%;
+    background: rgb(243, 92, 117);
+    color: rgb(255, 243, 128);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.feedback-form .btn button[type="submit"]:hover{
+    background: rgb(255, 243, 128);
+    color: rgb(243, 92, 117);
+}
+
+.feedback-content #error-msg{
+    margin-bottom: 17px;
+    color: rgb(241, 93, 93);
+    background: rgb(255, 219, 88);
+    padding: 0px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
