@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DeBac</title>
+    <link rel="stylesheet" href="./debac_css/contact_styles.css">
+    <script src="./debac_js/contact.js"></script>
+    <script src="./debac_js/subscribe.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <figure>
+                        <a href="home.html"><img src="./pictures/DeBac.png" alt="DeBac Logo" width="245"
+                                height="65"></a>
+                        <figcaption>&quot;Debacterialize your hands with suitable sanitisers!&quot;</figcaption>
+                    </figure>
+                </li>
+
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item">Types
+                    <ul class="dropdown">
+                        <li><a href="alcohol_free.html">Alcohol-Free</a></li>
+                        <li><a href="alcohol.html">Alcohol-Based</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="bundle.html">Bundle</a></li>
+                <li class="nav-item"><a href="#more">More</a></li>
+
+                <li class="icon-item">
+                    <img src="./pictures/cart.png" alt="Checkout Icon" width="35" height="35" usemap="#cartmap">
+                    <map name="cartmap">
+                        <area shape="square" coords="0,0,511,511" alt="checkout" href="checkout.html">
+                    </map>
+                </li>
+
+                <li class="icon-item">
+                    <img src="./pictures/profile-icon.png" alt="Profile Icon" width="35" height="35"
+                        usemap="#profilemap">
+                    <map name="profilemap">
+                        <area shape="circle" coords="128,128,230" alt="profile" href="profile.html">
+                    </map>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!---FAQs dropdown boxes with information--->
+            <h2>Contact Us</h2>
+            <h3>Frequently Asked Questions (FAQs)</h3>
+
+            <div class="contact">
+                <details>
+                    <summary>Payment Methods</summary>
+                    <p style="text-align:center">DeBac supports <span>2</span> payment options:</p>
+                    <ul class="payment">
+                        <li>Credit/ Debit cards</li>
+                        <li>Online Banking</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Shipping Options</summary>
+                    <p>Currently, DeBac only ships within Malaysia at these selected areas:
+                        <span>Petaling Jaya (PJ)</span> and <span>Kuala Lumpur (KL)</span>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Refund Policy</summary>
+                    <p>We do <span>not</span> offer refunds after a product has been purchased.
+                        However, a product may be replaced if defects are identified.
+                        Please contact us to replace the damaged item.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>How to check my orders?</summary>
+                    <p>An e-mail will be sent to you along with a tracking number to the courier after items
+                        have been successfully checked out.</p>
+                </details>
+            </div>
+        </section>
+
+        <!---Feedback--->
+        <section class="feedback-container">
+            <div class="feedback-content">
+                <h3>Feedback</h3>
+                <p>Please provide us feedback to improve our service.</p>
+                <div id="error-msg"></div>
+                
+                <form class="feedback-form" onsubmit="return validate();">
+                    <input id="name" type="text" placeholder="Name">
+                    <br><input id="email" type="text" placeholder="E-mail">
+                    <br><textarea id="message" placeholder="Message" rows="7"></textarea>
+                    <br>
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--Contact Information-->
+            <div class="support-content">
+                <h3>Customer Support</h3>
+                <ul type="square">
+                    <li>E-mail: support@DeBac.com</li>
+                    <li>Phone number: +60 12-345 6789</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="more">
+        <section class="foot-container">
+            <div class="content">
+                <h2>More</h2>
+                <ul>
+                    <li><a href="./about.html" class="footer-link">About Us</a></li>
+                    <li><a href="./contact.html" class="footer-link">Contact Us</a></li>
+                    <li><a href="./follow.html" class="footer-link">Follow Us (Socials)</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>Newsletter</h2>
+                <p>Get news from DeBac</p>
+                <div id="error-content"></div>
+                <form class="form-news" onsubmit="return subscribe();">
+                    <input type="text" id="e_mail" placeholder="Your e-mail..." size="34">
+                    <div class="btn">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="foot-bottom">
+            <img src="./pictures/DeBac.png" alt="DeBac Logo" width="150" height="40">
+            <p>Copyright &copy; 2022 DeBac. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
